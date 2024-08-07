@@ -317,7 +317,6 @@ class vehiculo
 		$d_new_final = base64_encode($d_new);
 		$html = '
 		<div class="container mt-5">
-  		 <p>UNIVERSIDAD DE LAS FUERZAS ARMADAS</p>
     <div class="d-flex justify-content-between mb-3">
         <h3>Lista de Vehículos</h3>
     </div>
@@ -361,13 +360,7 @@ class vehiculo
 				</tr>
 				        </tbody>';
 		}
-		$html .= '  
-		</table>
-  		
-                <p>Grupo 02</p>
-				<p>Dockerizado por: . Bustamante Cristian - Pogo Carlos</p>
-		</div>
-';
+		$html .= '';
 
 		return $html;
 

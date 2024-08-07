@@ -17,9 +17,29 @@
 	<!-- Sweet Alert -->
 	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 	<!-- Custom CSS -->
+	<style>
+		.header {
+			text-align: center;
+			margin: 20px 0;
+		}
+		.header h1 {
+			font-size: 2.5em;
+			margin-bottom: 10px;
+		}
+		.header h2 {
+			font-size: 2.1em;
+		}
+	</style>
 </head>
 
 <body>
+	<div class="header">
+		<h1>DOCKER</h1>
+		<h2>NOMBRES: CRISTIAN BUSTAMANTE - CARLOS POGO</h2>
+		<h2>Grupo 02</h2>
+	</div>
+
+
 	<?php
 	require_once ("constantes.php");
 	include_once ("class/class.vehiculo.php");
@@ -66,7 +86,7 @@
 		$c = new mysqli(SERVER, USER, PASS, BD);
 
 		if ($c->connect_errno) {
-			die("Error de conexión: " . $c->mysqli_connect_errno() . ", " . $c->connect_error());
+			die("Error de conexión: ");
 		} else {
 			//echo "La conexión tuvo éxito .......<br><br>";
 		}
